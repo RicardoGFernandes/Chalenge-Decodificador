@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador <> texto <> Desencriptador</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container__header">
+        <div class="header">
+            <a><img  src="./assets/Logo.png" alt="logo da Alura" class="logo"></a>
+        </div>  
+    </div>
+</header>
+
+<main>
+  <article class="container">
+      <section class="left" id="left">
+          <textarea class="inputtextarea" id="textoInput" placeholder="Digite seu aqui..." autofocus></textarea>
+          <div class="content_botones">
+              <span class="info">
+                  Apenas letras minúsculas e sem acento.
+              </span>
+              <div class="botones">
+                  <button id="button__encriptar" class="button__encriptar">Encriptar</button>
+                  <button id="button__desencriptar" class="button__desencriptar">Desencriptar</button>
+              </div>
+          </div>
+      </section>
+      <section class="right" id="rigth">
+        <img id="imagemp" class="imagemp" src="./assets/High quality products 1 1.svg" alt="Nenhuma mensagem encontrada">
+          <textarea id="textoFinal" class="textoFinal" placeholder="Nenhuma mensagem encontrada"></textarea>
+          <p id="textoInfo" class="info">Digite um texto que você deseja criptografar ou descriptografar.Observação não esqueça de copiar o texto criptografado.</p>
+          <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+      </section>
+  </article>
+<script src="./script.js"></script>
+</body>
+
+</html>
